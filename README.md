@@ -2,9 +2,9 @@
 
 Official **Bank Negara Malaysia** (Malaysia) daily exchange rates in Node.js / TypeScript — 27 currencies against the MYR, with history back to 2020. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
-These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the bank's own publication date.
+These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the publisher's own publication date.
 
-Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnm/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — 300 requests/month, no credit card.
+Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnm/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required.
 
 ## Install
 
@@ -42,6 +42,14 @@ const series = await getHistory(
 );
 ```
 
+## Currencies covered
+
+Bank Negara Malaysia currently publishes rates covering **28 currencies** (as of the latest table):
+
+`AED` · `AUD` · `BND` · `CAD` · `CHF` · `CNY` · `EGP` · `EUR` · `GBP` · `HKD` · `IDR` · `INR` · `JPY` · `KHR` · `KRW` · `MMK` · `MYR` · `NPR` · `NZD` · `PHP` · `PKR` · `SAR` · `SGD` · `THB` · `TWD` · `USD` · `VND` · `XDR`
+
+Pairs the central bank does not print directly are resolved from this table (see below).
+
 ## Published vs derived rates
 
 If Bank Negara Malaysia does not print a pair directly, the API resolves it from the bank's table (inverse, or a cross rate via MYR) and flags it `derived: true` with the `method` — so official and computed values are never confused.
@@ -50,7 +58,7 @@ If Bank Negara Malaysia does not print a pair directly, the API resolves it from
 
 - Every request counts toward your AllRatesToday monthly quota. Rates change once per business day — cache a day's table locally and a small quota goes a long way.
 - Latest rates are on every plan (including free); historical dates and time series need a [paid plan](https://allratestoday.com/pricing/).
-- Full API reference: [allratestoday.com/docs#central-bank](https://allratestoday.com/docs/#central-bank) · All covered banks: [central bank rates API](https://allratestoday.com/central-bank-rates-api/)
+- Full API reference: [allratestoday.com/docs#central-bank](https://allratestoday.com/docs/#central-bank) · All covered sources: [central bank rates API](https://allratestoday.com/central-bank-rates-api/)
 
 ## License
 
