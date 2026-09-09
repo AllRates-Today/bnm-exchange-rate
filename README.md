@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'MYR', { apiKey: 'art_live_...' });
 {
   bank: 'bnm',
   name: 'Bank Negara Malaysia',
-  rate_date: '2026-08-11',   // Bank Negara Malaysia's own publication date
+  rate_date: '2026-09-09',   // Bank Negara Malaysia's own publication date
   source: 'USD',
   target: 'MYR',
-  rate: 4.0925,
+  rate: 4.07,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bnm',
   name: 'Bank Negara Malaysia',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "MYR", "type": "middle", "value": 4.0925 },
+    { "base": "USD", "quote": "MYR", "type": "middle", "value": 4.07 },
     // … the rest of the published table (27 currencies vs MYR)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bnm-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'MYR', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'USD', target: 'MYR', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'MYR',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 4.0925, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 4.07, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Bank Negara Malaysia currently publishes rates covering **28 currencies** (as of the latest table):
+Bank Negara Malaysia currently publishes rates covering **27 currencies** against the MYR (as of the latest table):
 
-`AED` · `AUD` · `BND` · `CAD` · `CHF` · `CNY` · `EGP` · `EUR` · `GBP` · `HKD` · `IDR` · `INR` · `JPY` · `KHR` · `KRW` · `MMK` · `MYR` · `NPR` · `NZD` · `PHP` · `PKR` · `SAR` · `SGD` · `THB` · `TWD` · `USD` · `VND` · `XDR`
+🇦🇪 `AED` · 🇦🇺 `AUD` · 🇧🇳 `BND` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇪🇬 `EGP` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇮🇩 `IDR` · 🇮🇳 `INR` · 🇯🇵 `JPY` · 🇰🇭 `KHR` · 🇰🇷 `KRW` · 🇲🇲 `MMK` · 🇳🇵 `NPR` · 🇳🇿 `NZD` · 🇵🇭 `PHP` · 🇵🇰 `PKR` · 🇸🇦 `SAR` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇼 `TWD` · 🇺🇸 `USD` · 🇻🇳 `VND` · `XDR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'MYR', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2020 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/bnm.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/bnm/latest.json`
 
 ## 🔗 Links
 
