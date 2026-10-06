@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'MYR', { apiKey: 'art_live_...' });
 {
   bank: 'bnm',
   name: 'Bank Negara Malaysia',
-  rate_date: '2026-09-25',   // Bank Negara Malaysia's own publication date
+  rate_date: '2026-10-06',   // Bank Negara Malaysia's own publication date
   source: 'USD',
   target: 'MYR',
-  rate: 4.0775,
+  rate: 4.0853,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bnm',
   name: 'Bank Negara Malaysia',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "MYR", "type": "middle", "value": 4.0775 },
+    { "base": "USD", "quote": "MYR", "type": "middle", "value": 4.0853 },
     // … the rest of the published table (27 currencies vs MYR)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bnm-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'MYR', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'MYR', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'MYR',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 4.0775, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 4.0853, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
