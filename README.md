@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bnm-exchange-rate.svg)](https://github.com/AllRates-Today/bnm-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bnm-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/MYR today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnm%3Fsource%3DUSD%26target%3DMYR&query=%24.rate&label=USD%2FMYR%20published%20by%20Bank%20Negara%20Malaysia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnm/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnm%3Fsource%3DUSD%26target%3DMYR&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnm/)
 
 **Official Bank Negara Malaysia (Malaysia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank Negara Malaysia itself prints, every business day.**
 
@@ -32,6 +34,46 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank Negara Malaysia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Bank Negara Malaysia — 27 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | MYR | middle | 1.113214 |
+| AUD | MYR | middle | 2.8521 |
+| BND | MYR | middle | 3.1954 |
+| CAD | MYR | middle | 2.8764 |
+| CHF | MYR | middle | 4.9244 |
+| CNY | MYR | middle | 0.6105 |
+| EGP | MYR | middle | 0.078 |
+| EUR | MYR | middle | 4.5902 |
+| GBP | MYR | middle | 5.4134 |
+| HKD | MYR | middle | 0.520981 |
+| IDR | MYR | middle | 0.000229 |
+| INR | MYR | middle | 0.042273 |
+| JPY | MYR | middle | 0.025868 |
+| KHR | MYR | middle | 0.001004 |
+| KRW | MYR | middle | 0.003047 |
+| MMK | MYR | middle | 0.001953 |
+| NPR | MYR | middle | 0.026421 |
+| NZD | MYR | middle | 2.2971 |
+| PHP | MYR | middle | 0.065105 |
+| PKR | MYR | middle | 0.01476 |
+| SAR | MYR | middle | 1.089033 |
+| SGD | MYR | middle | 3.1954 |
+| THB | MYR | middle | 0.121827 |
+| TWD | MYR | middle | 0.127922 |
+| USD | MYR | middle | 4.0885 |
+| VND | MYR | middle | 0.000158 |
+| XDR | MYR | middle | 5.527 |
+
+Source: [Official rates published by BNM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
