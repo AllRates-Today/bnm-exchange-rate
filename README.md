@@ -42,37 +42,37 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Bank Negara Malaysia — 27 rates. Updated 2026-10-12.
+Published **2026-10-13** by Bank Negara Malaysia — 27 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.111512 |
-| AUD | MYR | middle | 2.8504 |
-| BND | MYR | middle | 3.1906 |
-| CAD | MYR | middle | 2.8632 |
-| CHF | MYR | middle | 4.9181 |
-| CNY | MYR | middle | 0.61 |
-| EGP | MYR | middle | 0.0777 |
-| EUR | MYR | middle | 4.5762 |
-| GBP | MYR | middle | 5.4076 |
-| HKD | MYR | middle | 0.520184 |
+| AED | MYR | middle | 1.112533 |
+| AUD | MYR | middle | 2.8441 |
+| BND | MYR | middle | 3.1909 |
+| CAD | MYR | middle | 2.8643 |
+| CHF | MYR | middle | 4.9049 |
+| CNY | MYR | middle | 0.6102 |
+| EGP | MYR | middle | 0.0776 |
+| EUR | MYR | middle | 4.5663 |
+| GBP | MYR | middle | 5.4017 |
+| HKD | MYR | middle | 0.520659 |
 | IDR | MYR | middle | 0.000228 |
-| INR | MYR | middle | 0.042581 |
-| JPY | MYR | middle | 0.025799 |
-| KHR | MYR | middle | 0.000999 |
-| KRW | MYR | middle | 0.003059 |
-| MMK | MYR | middle | 0.00195 |
-| NPR | MYR | middle | 0.026612 |
-| NZD | MYR | middle | 2.2891 |
-| PHP | MYR | middle | 0.065072 |
-| PKR | MYR | middle | 0.014737 |
-| SAR | MYR | middle | 1.087194 |
-| SGD | MYR | middle | 3.1906 |
-| THB | MYR | middle | 0.121786 |
-| TWD | MYR | middle | 0.127882 |
-| USD | MYR | middle | 4.0823 |
+| INR | MYR | middle | 0.042882 |
+| JPY | MYR | middle | 0.025812 |
+| KHR | MYR | middle | 0.001 |
+| KRW | MYR | middle | 0.003042 |
+| MMK | MYR | middle | 0.001952 |
+| NPR | MYR | middle | 0.026801 |
+| NZD | MYR | middle | 2.2857 |
+| PHP | MYR | middle | 0.065014 |
+| PKR | MYR | middle | 0.014758 |
+| SAR | MYR | middle | 1.087946 |
+| SGD | MYR | middle | 3.1909 |
+| THB | MYR | middle | 0.12168 |
+| TWD | MYR | middle | 0.127262 |
+| USD | MYR | middle | 4.086 |
 | VND | MYR | middle | 0.000158 |
-| XDR | MYR | middle | 5.5243 |
+| XDR | MYR | middle | 5.5294 |
 
 Source: [Official rates published by BNM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
