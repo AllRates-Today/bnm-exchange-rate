@@ -33,46 +33,49 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bnm').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Bank Negara Malaysia table](https://allratestoday.com/api/open/central-bank/bnm/table.svg)](https://allratestoday.com/central-bank-rates-api/bnm/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Bank Negara Malaysia — 27 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Bank Negara Malaysia — 27 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.111883 |
-| AUD | MYR | middle | 2.8368 |
-| BND | MYR | middle | 3.1874 |
-| CAD | MYR | middle | 2.881 |
-| CHF | MYR | middle | 4.9401 |
-| CNY | MYR | middle | 0.6104 |
-| EGP | MYR | middle | 0.0764 |
-| EUR | MYR | middle | 4.5888 |
-| GBP | MYR | middle | 5.4321 |
-| HKD | MYR | middle | 0.52035 |
+| AED | MYR | middle | 1.111308 |
+| AUD | MYR | middle | 2.8477 |
+| BND | MYR | middle | 3.1903 |
+| CAD | MYR | middle | 2.8905 |
+| CHF | MYR | middle | 4.9524 |
+| CNY | MYR | middle | 0.6108 |
+| EGP | MYR | middle | 0.0762 |
+| EUR | MYR | middle | 4.5837 |
+| GBP | MYR | middle | 5.4404 |
+| HKD | MYR | middle | 0.520092 |
 | IDR | MYR | middle | 0.000226 |
-| INR | MYR | middle | 0.04311 |
-| JPY | MYR | middle | 0.025863 |
-| KHR | MYR | middle | 0.001001 |
-| KRW | MYR | middle | 0.00304 |
-| MMK | MYR | middle | 0.00195 |
-| NPR | MYR | middle | 0.026943 |
-| NZD | MYR | middle | 2.3086 |
-| PHP | MYR | middle | 0.06481 |
-| PKR | MYR | middle | 0.014742 |
-| SAR | MYR | middle | 1.088106 |
-| SGD | MYR | middle | 3.1874 |
-| THB | MYR | middle | 0.122005 |
-| TWD | MYR | middle | 0.125871 |
-| USD | MYR | middle | 4.0835 |
+| INR | MYR | middle | 0.043045 |
+| JPY | MYR | middle | 0.025818 |
+| KHR | MYR | middle | 0.001 |
+| KRW | MYR | middle | 0.003065 |
+| MMK | MYR | middle | 0.001949 |
+| NPR | MYR | middle | 0.026902 |
+| NZD | MYR | middle | 2.3093 |
+| PHP | MYR | middle | 0.064712 |
+| PKR | MYR | middle | 0.014749 |
+| SAR | MYR | middle | 1.087602 |
+| SGD | MYR | middle | 3.1903 |
+| THB | MYR | middle | 0.121781 |
+| TWD | MYR | middle | 0.125569 |
+| USD | MYR | middle | 4.0815 |
 | VND | MYR | middle | 0.000158 |
-| XDR | MYR | middle | 5.5291 |
+| XDR | MYR | middle | 5.5364 |
+
+</details>
 
 Source: [Official rates published by BNM, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnm/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -345,7 +348,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bnm-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bnm-exchange-rate)
 
 ## 📜 License
