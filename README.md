@@ -47,37 +47,37 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-21 by Bank Negara Malaysia — 27 rates. Updated 2026-10-21.</summary>
+<summary>Table as text: published 2026-10-22 by Bank Negara Malaysia — 27 rates. Updated 2026-10-22.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.111379 |
-| AUD | MYR | middle | 2.8633 |
-| BND | MYR | middle | 3.1942 |
-| CAD | MYR | middle | 2.9025 |
-| CHF | MYR | middle | 4.9442 |
-| CNY | MYR | middle | 0.6111 |
-| EGP | MYR | middle | 0.0749 |
-| EUR | MYR | middle | 4.5827 |
-| GBP | MYR | middle | 5.459 |
-| HKD | MYR | middle | 0.520098 |
-| IDR | MYR | middle | 0.000227 |
-| INR | MYR | middle | 0.043117 |
-| JPY | MYR | middle | 0.025814 |
-| KHR | MYR | middle | 0.001 |
-| KRW | MYR | middle | 0.003079 |
-| MMK | MYR | middle | 0.001949 |
-| NPR | MYR | middle | 0.026948 |
-| NZD | MYR | middle | 2.3167 |
-| PHP | MYR | middle | 0.064529 |
-| PKR | MYR | middle | 0.014735 |
-| SAR | MYR | middle | 1.088135 |
-| SGD | MYR | middle | 3.1942 |
+| AED | MYR | middle | 1.111482 |
+| AUD | MYR | middle | 2.8621 |
+| BND | MYR | middle | 3.1964 |
+| CAD | MYR | middle | 2.9083 |
+| CHF | MYR | middle | 4.9617 |
+| CNY | MYR | middle | 0.6116 |
+| EGP | MYR | middle | 0.0751 |
+| EUR | MYR | middle | 4.5893 |
+| GBP | MYR | middle | 5.468 |
+| HKD | MYR | middle | 0.52031 |
+| IDR | MYR | middle | 0.000226 |
+| INR | MYR | middle | 0.043242 |
+| JPY | MYR | middle | 0.025886 |
+| KHR | MYR | middle | 0.000997 |
+| KRW | MYR | middle | 0.003084 |
+| MMK | MYR | middle | 0.00195 |
+| NPR | MYR | middle | 0.027026 |
+| NZD | MYR | middle | 2.3201 |
+| PHP | MYR | middle | 0.064358 |
+| PKR | MYR | middle | 0.014743 |
+| SAR | MYR | middle | 1.088266 |
+| SGD | MYR | middle | 3.1964 |
 | THB | MYR | middle | 0.121297 |
-| TWD | MYR | middle | 0.125643 |
-| USD | MYR | middle | 4.0817 |
+| TWD | MYR | middle | 0.125422 |
+| USD | MYR | middle | 4.0823 |
 | VND | MYR | middle | 0.000158 |
-| XDR | MYR | middle | 5.5292 |
+| XDR | MYR | middle | 5.536 |
 
 </details>
 
