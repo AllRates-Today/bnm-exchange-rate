@@ -47,37 +47,37 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bank Negara Malaysia — 27 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Bank Negara Malaysia — 27 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.11158 |
-| AUD | MYR | middle | 2.872 |
-| BND | MYR | middle | 3.1852 |
-| CAD | MYR | middle | 2.9029 |
-| CHF | MYR | middle | 4.9205 |
-| CNY | MYR | middle | 0.6123 |
-| EGP | MYR | middle | 0.0729 |
-| EUR | MYR | middle | 4.5414 |
-| GBP | MYR | middle | 5.4293 |
-| HKD | MYR | middle | 0.520415 |
-| IDR | MYR | middle | 0.000225 |
-| INR | MYR | middle | 0.042941 |
-| JPY | MYR | middle | 0.025847 |
-| KHR | MYR | middle | 0.000997 |
-| KRW | MYR | middle | 0.003049 |
-| MMK | MYR | middle | 0.00195 |
-| NPR | MYR | middle | 0.026837 |
-| NZD | MYR | middle | 2.2923 |
-| PHP | MYR | middle | 0.063795 |
-| PKR | MYR | middle | 0.014738 |
-| SAR | MYR | middle | 1.087811 |
-| SGD | MYR | middle | 3.1852 |
-| THB | MYR | middle | 0.120655 |
-| TWD | MYR | middle | 0.125844 |
-| USD | MYR | middle | 4.0825 |
-| VND | MYR | middle | 0.000158 |
-| XDR | MYR | middle | 5.5221 |
+| AED | MYR | middle | 1.106316 |
+| AUD | MYR | middle | 2.8656 |
+| BND | MYR | middle | 3.1734 |
+| CAD | MYR | middle | 2.9055 |
+| CHF | MYR | middle | 4.9055 |
+| CNY | MYR | middle | 0.61 |
+| EGP | MYR | middle | 0.0724 |
+| EUR | MYR | middle | 4.5288 |
+| GBP | MYR | middle | 5.4138 |
+| HKD | MYR | middle | 0.517947 |
+| IDR | MYR | middle | 0.000224 |
+| INR | MYR | middle | 0.042655 |
+| JPY | MYR | middle | 0.025763 |
+| KHR | MYR | middle | 0.000992 |
+| KRW | MYR | middle | 0.003043 |
+| MMK | MYR | middle | 0.001941 |
+| NPR | MYR | middle | 0.026659 |
+| NZD | MYR | middle | 2.2837 |
+| PHP | MYR | middle | 0.063643 |
+| PKR | MYR | middle | 0.014688 |
+| SAR | MYR | middle | 1.082835 |
+| SGD | MYR | middle | 3.1734 |
+| THB | MYR | middle | 0.120378 |
+| TWD | MYR | middle | 0.124823 |
+| USD | MYR | middle | 4.0635 |
+| VND | MYR | middle | 0.000157 |
+| XDR | MYR | middle | 5.493 |
 
 </details>
 
@@ -242,6 +242,7 @@ Bank Negara Malaysia is Malaysia's central bank. It publishes ringgit exchange r
 
 - Publisher's own page: [Exchange rates](https://www.bnm.gov.my/exchange-rates) · [www.bnm.gov.my](https://www.bnm.gov.my)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank Negara Malaysia rates page](https://allratestoday.com/central-bank-rates-api/bnm/)
+- In the API: usually by **06:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
