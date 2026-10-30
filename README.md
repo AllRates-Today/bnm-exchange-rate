@@ -24,60 +24,45 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Bank Negara Malaysia table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bnm?source=USD&target=MYR"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bnm').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Bank Negara Malaysia table](https://allratestoday.com/api/open/central-bank/bnm/table.svg)](https://allratestoday.com/central-bank-rates-api/bnm/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Bank Negara Malaysia — 27 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Bank Negara Malaysia — 27 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.106316 |
-| AUD | MYR | middle | 2.8656 |
-| BND | MYR | middle | 3.1734 |
-| CAD | MYR | middle | 2.9055 |
-| CHF | MYR | middle | 4.9055 |
-| CNY | MYR | middle | 0.61 |
-| EGP | MYR | middle | 0.0724 |
-| EUR | MYR | middle | 4.5288 |
-| GBP | MYR | middle | 5.4138 |
-| HKD | MYR | middle | 0.517947 |
-| IDR | MYR | middle | 0.000224 |
-| INR | MYR | middle | 0.042655 |
-| JPY | MYR | middle | 0.025763 |
-| KHR | MYR | middle | 0.000992 |
-| KRW | MYR | middle | 0.003043 |
-| MMK | MYR | middle | 0.001941 |
-| NPR | MYR | middle | 0.026659 |
-| NZD | MYR | middle | 2.2837 |
-| PHP | MYR | middle | 0.063643 |
-| PKR | MYR | middle | 0.014688 |
-| SAR | MYR | middle | 1.082835 |
-| SGD | MYR | middle | 3.1734 |
-| THB | MYR | middle | 0.120378 |
-| TWD | MYR | middle | 0.124823 |
-| USD | MYR | middle | 4.0635 |
+| AED | MYR | middle | 1.102595 |
+| AUD | MYR | middle | 2.8513 |
+| BND | MYR | middle | 3.1689 |
+| CAD | MYR | middle | 2.8983 |
+| CHF | MYR | middle | 4.9267 |
+| CNY | MYR | middle | 0.6082 |
+| EGP | MYR | middle | 0.0723 |
+| EUR | MYR | middle | 4.5318 |
+| GBP | MYR | middle | 5.4233 |
+| HKD | MYR | middle | 0.516156 |
+| IDR | MYR | middle | 0.000223 |
+| INR | MYR | middle | 0.042502 |
+| JPY | MYR | middle | 0.025724 |
+| KHR | MYR | middle | 0.000989 |
+| KRW | MYR | middle | 0.00303 |
+| MMK | MYR | middle | 0.001934 |
+| NPR | MYR | middle | 0.026565 |
+| NZD | MYR | middle | 2.2839 |
+| PHP | MYR | middle | 0.063592 |
+| PKR | MYR | middle | 0.014638 |
+| SAR | MYR | middle | 1.079061 |
+| SGD | MYR | middle | 3.1689 |
+| THB | MYR | middle | 0.120123 |
+| TWD | MYR | middle | 0.124184 |
+| USD | MYR | middle | 4.0495 |
 | VND | MYR | middle | 0.000157 |
-| XDR | MYR | middle | 5.493 |
+| XDR | MYR | middle | 5.4772 |
 
 </details>
 
