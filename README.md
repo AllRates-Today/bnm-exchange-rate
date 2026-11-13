@@ -32,37 +32,37 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-12 by Bank Negara Malaysia — 27 rates. Updated 2026-11-12.</summary>
+<summary>Table as text: published 2026-11-13 by Bank Negara Malaysia — 27 rates. Updated 2026-11-13.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | MYR | middle | 1.112019 |
-| AUD | MYR | middle | 2.7963 |
-| BND | MYR | middle | 3.1781 |
-| CAD | MYR | middle | 2.8641 |
-| CHF | MYR | middle | 4.9013 |
+| AED | MYR | middle | 1.112352 |
+| AUD | MYR | middle | 2.7811 |
+| BND | MYR | middle | 3.1757 |
+| CAD | MYR | middle | 2.8656 |
+| CHF | MYR | middle | 4.8922 |
 | CNY | MYR | middle | 0.6124 |
-| EGP | MYR | middle | 0.0763 |
-| EUR | MYR | middle | 4.5228 |
-| GBP | MYR | middle | 5.4144 |
-| HKD | MYR | middle | 0.52062 |
+| EGP | MYR | middle | 0.0764 |
+| EUR | MYR | middle | 4.519 |
+| GBP | MYR | middle | 5.4069 |
+| HKD | MYR | middle | 0.520754 |
 | IDR | MYR | middle | 0.000224 |
-| INR | MYR | middle | 0.04357 |
-| JPY | MYR | middle | 0.025565 |
-| KHR | MYR | middle | 0.000997 |
-| KRW | MYR | middle | 0.003069 |
+| INR | MYR | middle | 0.0434 |
+| JPY | MYR | middle | 0.025549 |
+| KHR | MYR | middle | 0.000999 |
+| KRW | MYR | middle | 0.003066 |
 | MMK | MYR | middle | 0.001951 |
-| NPR | MYR | middle | 0.027231 |
-| NZD | MYR | middle | 2.2703 |
-| PHP | MYR | middle | 0.064178 |
-| PKR | MYR | middle | 0.014765 |
-| SAR | MYR | middle | 1.088211 |
-| SGD | MYR | middle | 3.1781 |
-| THB | MYR | middle | 0.120904 |
-| TWD | MYR | middle | 0.123897 |
-| USD | MYR | middle | 4.084 |
+| NPR | MYR | middle | 0.027125 |
+| NZD | MYR | middle | 2.2655 |
+| PHP | MYR | middle | 0.064114 |
+| PKR | MYR | middle | 0.014769 |
+| SAR | MYR | middle | 1.088419 |
+| SGD | MYR | middle | 3.1757 |
+| THB | MYR | middle | 0.120662 |
+| TWD | MYR | middle | 0.124353 |
+| USD | MYR | middle | 4.085 |
 | VND | MYR | middle | 0.000159 |
-| XDR | MYR | middle | 5.5192 |
+| XDR | MYR | middle | 5.5117 |
 
 </details>
 
