@@ -32,37 +32,37 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-23 by Bank Negara Malaysia — 27 rates. Updated 2026-11-23.</summary>
+<summary>Table as text: published 2026-11-24 by Bank Negara Malaysia — 27 rates. Updated 2026-11-24.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | MYR | middle | 1.12111 |
-| AUD | MYR | middle | 2.7318 |
-| BND | MYR | middle | 3.1907 |
-| CAD | MYR | middle | 2.8724 |
-| CHF | MYR | middle | 4.9027 |
-| CNY | MYR | middle | 0.6169 |
-| EGP | MYR | middle | 0.0757 |
-| EUR | MYR | middle | 4.5218 |
-| GBP | MYR | middle | 5.3989 |
-| HKD | MYR | middle | 0.525285 |
+| AUD | MYR | middle | 2.7291 |
+| BND | MYR | middle | 3.189 |
+| CAD | MYR | middle | 2.8673 |
+| CHF | MYR | middle | 4.8939 |
+| CNY | MYR | middle | 0.6181 |
+| EGP | MYR | middle | 0.0759 |
+| EUR | MYR | middle | 4.4926 |
+| GBP | MYR | middle | 5.3694 |
+| HKD | MYR | middle | 0.525091 |
 | IDR | MYR | middle | 0.000226 |
-| INR | MYR | middle | 0.044362 |
-| JPY | MYR | middle | 0.025898 |
+| INR | MYR | middle | 0.044315 |
+| JPY | MYR | middle | 0.025899 |
 | KHR | MYR | middle | 0.001007 |
-| KRW | MYR | middle | 0.003051 |
+| KRW | MYR | middle | 0.003067 |
 | MMK | MYR | middle | 0.001967 |
-| NPR | MYR | middle | 0.027726 |
-| NZD | MYR | middle | 2.2523 |
-| PHP | MYR | middle | 0.064488 |
+| NPR | MYR | middle | 0.027697 |
+| NZD | MYR | middle | 2.244 |
+| PHP | MYR | middle | 0.064554 |
 | PKR | MYR | middle | 0.014894 |
-| SAR | MYR | middle | 1.097488 |
-| SGD | MYR | middle | 3.1907 |
-| THB | MYR | middle | 0.121179 |
-| TWD | MYR | middle | 0.124966 |
+| SAR | MYR | middle | 1.097312 |
+| SGD | MYR | middle | 3.189 |
+| THB | MYR | middle | 0.12117 |
+| TWD | MYR | middle | 0.125179 |
 | USD | MYR | middle | 4.1175 |
-| VND | MYR | middle | 0.000159 |
-| XDR | MYR | middle | 5.5291 |
+| VND | MYR | middle | 0.00016 |
+| XDR | MYR | middle | 5.5306 |
 
 </details>
 
